@@ -6,6 +6,7 @@ import DashboardCharts from "../../components/dashbord/DashboardCharts";
 import { Box } from "@mui/material";
 import DashboardBottom from "../../components/dashbord/DashboardBottom";
 import LowStockTable from "../../components/dashbord/LowStockTable";
+import DashboardContent from "../../components/dashbord/DashboardContent";
 
 const Dashboard = () => {
   return (
@@ -13,13 +14,12 @@ const Dashboard = () => {
       <DashBoardHeader />
       <StatsCards />
       <Box sx={{ mt: 3 }}>
-        <DashboardCharts />
+        <DashboardContent />
       </Box>
 
-      <Box sx={{ mt: 3 }}>
-        <DashboardBottom />
+      <Box mt={3}>
+        <LowStockTable />
       </Box>
-      <LowStockTable/>
     </DashboardLayout>
   );
 };

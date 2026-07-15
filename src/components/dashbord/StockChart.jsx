@@ -32,7 +32,14 @@ const StockChart = () => {
         border: "1px solid #E5E7EB",
       }}
     >
-      <CardContent>
+      <CardContent
+        sx={{
+          p: 3,
+          "&:last-child": {
+            pb: 3,
+          },
+        }}
+      >
         <Typography
           sx={{
             fontSize: 18,
@@ -53,7 +60,7 @@ const StockChart = () => {
           Comparison over last 8 months
         </Typography>
 
-        <ResponsiveContainer width="100%" height={280}>
+        <ResponsiveContainer width="100%" height={220}>
           <LineChart data={data}>
             <CartesianGrid
               strokeDasharray="3 3"

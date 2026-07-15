@@ -88,6 +88,7 @@ const LowStockTable = () => {
     <Card
       elevation={0}
       sx={{
+        mt:3,
         borderRadius: "18px",
         border: "1px solid #E5E7EB",
       }}

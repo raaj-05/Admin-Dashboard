@@ -52,9 +52,12 @@ const RecentActivities = () => {
         borderRadius: "18px",
         border: "1px solid #E5E7EB",
         height: "100%",
+        display: "flex",
       }}
     >
-      <CardContent>
+      <CardContent  sx={{
+    flex: 1,
+  }}>
         <Typography
           sx={{
             fontSize: 18,

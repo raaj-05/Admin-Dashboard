@@ -1,9 +1,9 @@
 import React from 'react'
-import Dashboard from './pages/DashBoard/Dashboard';
+import AppRoutes from './routes/AppRoutes';
 
 const  App=()=> {
   return (
-    <Dashboard/>
+    <AppRoutes/>
   )
 }
 
